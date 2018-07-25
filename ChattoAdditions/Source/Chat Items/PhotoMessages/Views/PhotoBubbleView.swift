@@ -162,7 +162,7 @@ open class PhotoBubbleView: UIView, MaximumLayoutWidthSpecificable, BackgroundSi
             self.placeholderIconView.isHidden = true
         } else {
             self.imageView.image = self.photoMessageStyle.placeholderBackgroundImage(viewModel: self.photoMessageViewModel)
-            //self.placeholderIconView.isHidden = self.photoMessageViewModel.transferStatus.value != .failed
+            self.placeholderIconView.isHidden = false
         }
 
         if let overlayColor = self.photoMessageStyle.overlayColor(viewModel: self.photoMessageViewModel) {
